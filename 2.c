@@ -1,12 +1,13 @@
-//#include <stdio.h>
-//
-//int main(){
-//	
-//	int a = 11;
-//	int *pa = &a;
-//	
-//	printf("%d, %d",a,pa); // x = 16진수(heXa) 
-//	// 32bit(4pyte) 컴퓨터이기 때문에 
-//	// pa에 저장된 a의 주소값을 16진수로 출력 
-//	return 0;
-//};
+#include <stdio.h>
+
+int main(){
+	int a = 6;
+	
+	int * pa = &a; // 정수형 변수의 주소를
+	// 포인터 변수(pa)에 저장 
+	int b = *pa + 4; // pa 에 저장되어 있는 주소를
+	// 이용해 역참조를 하여 해당 주소의 위치의 데이터 
+	// 6을 가지고 와서 4를 더한 결과를 b에 저장
+	printf("%d, %d", a, b);
+	return 0;
+} 
